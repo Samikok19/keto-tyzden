@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1a14" />
+  <meta name="description" content="Samuelov keto týždenný meal pack — 21.–25. 9. 2026" />
+  <title>Keto týždeň · 21.–25. 9. 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="topbar__title">
+        <span class="topbar__badge">Keto</span>
+        <h1>Týždeň 21.–25.&nbsp;9.&nbsp;2026</h1>
+      </div>
+      <nav class="jump" aria-label="Rýchla navigácia">
+        <a href="#nakup">Nákup</a>
+        <a href="#po">Po</a>
+        <a href="#ut">Ut</a>
+        <a href="#st">St</a>
+        <a href="#stv">Št</a>
+        <a href="#pia">Pia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah" class="wrap">
+    <!-- Week summary -->
+    <section class="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title" class="sr-only">Súhrn týždňa</h2>
+      <div class="summary__grid">
+        <div class="summary__stat summary__stat--kcal">
+          <span class="summary__label">Týždeň</span>
+          <strong>~10&nbsp;620</strong>
+          <span class="summary__unit">kcal</span>
+        </div>
+        <div class="summary__macros" aria-label="Makrá týždňa">
+          <span><b>P</b> ~870&nbsp;g</span>
+          <span><b>T</b> ~705&nbsp;g</span>
+          <span><b>S</b> ~112&nbsp;g</span>
+          <span><b>V</b> ~89&nbsp;g</span>
+        </div>
+        <p class="summary__note">
+          Tréningový deň ⌀ ~2370 kcal · pri hladu +olej/orechy
+        </p>
+        <p class="summary__shake">
+          <span class="pill">Shake Po–Št</span>
+          kokosové mlieko + proteín + kakao + chia · ~280 kcal
+        </p>
+      </div>
+    </section>
+
+    <!-- Shopping -->
+    <section id="nakup" class="card card--shop" aria-labelledby="nakup-title">
+      <div class="card__head">
+        <h2 id="nakup-title">Nákup &amp; spotreba</h2>
+        <button type="button" class="btn-ghost" id="reset-checks" title="Odškrtnúť všetko">Reset</button>
+      </div>
+
+      <div class="shop-block">
+        <h3 class="shop-block__title shop-block__title--buy">Dokúpiť (mini)</h3>
+        <ul class="checklist" data-store="buy">
+          <li>
+            <label class="check">
+              <input type="checkbox" data-key="buy-almond" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text">Mandľová múka <em>150&nbsp;g</em></span>
+            </label>
+          </li>
+          <li>
+            <label class="check">
+              <input type="checkbox" data-key="buy-bp" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text">Prášok do pečiva <em>1 balenie</em></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="shop-block">
+        <h3 class="shop-block__title">Už mám — skontrolovať</h3>
+        <ul class="checklist checklist--grid" data-store="have">
+          <li><label class="check"><input type="checkbox" data-key="have-chicken" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Kuracie mäso <em>790&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-salmon" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Losos <em>500&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-burger" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Hamburgery <em>300&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-tartar" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Tatár / mleté <em>200&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-steak" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Steak <em>239&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-bacon" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Slanina <em>250&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-bryndza" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Bryndza <em>250&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-mozarella" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Mozzarella</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-cheddar" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Cheddar</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-gouda" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Gouda</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-tvaroh" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Tvaroh</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-butter" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Maslo</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-eggs" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Vajcia <em>~14 ks</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-oil" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Olej</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-mayo" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Majoneza</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-cabbage" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Kapusta <em>~1&nbsp;kg</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-broc" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Brokolica <em>350&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-iceberg" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Ľadový šalát</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-bagged" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Balený šalát</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-cuke" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Uhorky <em>3 ks</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-peanuts" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Arašidy <em>~150&nbsp;g</em></span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-psyllium" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Psyllium</span></label></li>
+          <li><label class="check"><input type="checkbox" data-key="have-shake" /><span class="check__box" aria-hidden="true"></span><span class="check__text">Shake pantrý</span></label></li>
+        </ul>
+      </div>
+
+      <div class="shop-block shop-block--dont">
+        <h3 class="shop-block__title">Nekupovať</h3>
+        <ul class="dont-list">
+          <li>extra mleté kura</li>
+          <li>šunka</li>
+          <li>olivy</li>
+          <li>huby</li>
+          <li>cuketa</li>
+          <li>smotana</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Days -->
+    <section class="days" aria-label="Dni týždňa">
+
+      <!-- Pondelok -->
+      <article id="po" class="day" data-day="po">
+        <button type="button" class="day__toggle" aria-expanded="true" aria-controls="po-body" id="po-btn">
+          <span class="day__name">Pondelok</span>
+          <span class="day__totals">~2660 kcal · P215 · T175 · S28 · V22</span>
+          <span class="day__chev" aria-hidden="true"></span>
+        </button>
+        <div class="day__body" id="po-body" role="region" aria-labelledby="po-btn">
+          <div class="meal">
+            <div class="meal__tag meal__tag--r">Raňajky</div>
+            <h3 class="meal__name">Žemľa + vajcia na masle s bryndzou</h3>
+            <ul class="meal__grams">
+              <li>1 keto žemľa</li>
+              <li>3 žĺtky + 1 celé vajce <span class="hint">(alebo 2 celé)</span></li>
+              <li>maslo na pečenie</li>
+              <li>bryndza <strong>20&nbsp;g</strong></li>
+            </ul>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--o">Obed</div>
+            <h3 class="meal__name">Kuracie stehná + kapusta + bryndza</h3>
+            <ul class="meal__grams">
+              <li>kuracie stehná <strong>300&nbsp;g</strong></li>
+              <li>kapusta <strong>200&nbsp;g</strong></li>
+              <li>bryndza <strong>50&nbsp;g</strong></li>
+              <li>+ olej / majo</li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Restovať stehná na cesnakovom masle; kapustu krátko na oleji.
+            </p>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--v">Večera</div>
+            <h3 class="meal__name">Hovädzí hamburger + kapusta + cheddar</h3>
+            <ul class="meal__grams">
+              <li>hamburger <strong>300&nbsp;g</strong></li>
+              <li>kapusta <strong>200&nbsp;g</strong></li>
+              <li>cheddar <strong>40&nbsp;g</strong></li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Placky poriadne prepiecť; syr pridať na koniec.
+            </p>
+          </div>
+          <p class="shake-line"><span class="pill pill--sm">+ shake</span> kokosové mlieko · proteín · kakao · chia</p>
+        </div>
+      </article>
+
+      <!-- Utorok -->
+      <article id="ut" class="day" data-day="ut">
+        <button type="button" class="day__toggle" aria-expanded="true" aria-controls="ut-body" id="ut-btn">
+          <span class="day__name">Utorok</span>
+          <span class="day__totals">~2235 kcal · P195 · T140 · S26 · V20</span>
+          <span class="day__chev" aria-hidden="true"></span>
+        </button>
+        <div class="day__body" id="ut-body" role="region" aria-labelledby="ut-btn">
+          <div class="meal">
+            <div class="meal__tag meal__tag--r">Raňajky</div>
+            <h3 class="meal__name">Žemľa + vajcia + uhorka</h3>
+            <ul class="meal__grams">
+              <li>1 keto žemľa</li>
+              <li>2 vajcia</li>
+              <li>olej</li>
+              <li>uhorka</li>
+            </ul>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--o">Obed</div>
+            <h3 class="meal__name">Kura + brokolica + gouda</h3>
+            <ul class="meal__grams">
+              <li>kuracie mäso <strong>250&nbsp;g</strong></li>
+              <li>brokolica <strong>175&nbsp;g</strong></li>
+              <li>gouda <strong>40&nbsp;g</strong></li>
+              <li>maslo</li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Brokolicu neprevariť; stehná do zlata.
+            </p>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--v">Večera</div>
+            <h3 class="meal__name">Losos + ľadový šalát + mozzarella</h3>
+            <ul class="meal__grams">
+              <li>losos <strong>250&nbsp;g</strong> <span class="hint">(2×125&nbsp;g)</span></li>
+              <li>ľadový šalát</li>
+              <li>mozzarella <strong>50&nbsp;g</strong></li>
+              <li>+ olej / majo</li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Losos na masle, citrón ak je; šalát s majo.
+            </p>
+          </div>
+          <p class="shake-line"><span class="pill pill--sm">+ shake</span> kokosové mlieko · proteín · kakao · chia</p>
+        </div>
+      </article>
+
+      <!-- Streda -->
+      <article id="st" class="day" data-day="st">
+        <button type="button" class="day__toggle" aria-expanded="true" aria-controls="st-body" id="st-btn">
+          <span class="day__name">Streda</span>
+          <span class="day__totals">~2240 kcal · P200 · T145 · S24 · V19</span>
+          <span class="day__chev" aria-hidden="true"></span>
+        </button>
+        <div class="day__body" id="st-body" role="region" aria-labelledby="st-btn">
+          <p class="day-note">Posledné kura pred 24.&nbsp;9.</p>
+          <div class="meal">
+            <div class="meal__tag meal__tag--r">Raňajky</div>
+            <h3 class="meal__name">Žemľa + vajcia so slaninou</h3>
+            <ul class="meal__grams">
+              <li>1 keto žemľa</li>
+              <li>2 vajcia</li>
+              <li>slanina <strong>40&nbsp;g</strong></li>
+              <li>syr <strong>20&nbsp;g</strong></li>
+            </ul>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--o">Obed</div>
+            <h3 class="meal__name">Kura + kapusta + bryndza</h3>
+            <ul class="meal__grams">
+              <li>kuracie mäso <strong>240&nbsp;g</strong></li>
+              <li>kapusta <strong>200&nbsp;g</strong></li>
+              <li>bryndza <strong>50&nbsp;g</strong></li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Kapustu krátko restovať; bryndzu na koniec.
+            </p>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--v">Večera</div>
+            <h3 class="meal__name">Losos + brokolica</h3>
+            <ul class="meal__grams">
+              <li>losos <strong>250&nbsp;g</strong></li>
+              <li>brokolica <strong>175&nbsp;g</strong></li>
+              <li>maslo</li>
+            </ul>
+            <p class="tip tip--warn" role="note">
+              <span class="tip__label">Tip</span>
+              Dojesť losos pred 24.&nbsp;9.
+            </p>
+          </div>
+          <p class="shake-line"><span class="pill pill--sm">+ shake</span> kokosové mlieko · proteín · kakao · chia</p>
+        </div>
+      </article>
+
+      <!-- Štvrtok -->
+      <article id="stv" class="day" data-day="stv">
+        <button type="button" class="day__toggle" aria-expanded="true" aria-controls="stv-body" id="stv-btn">
+          <span class="day__name">Štvrtok</span>
+          <span class="day__totals">~2350 kcal · P190 · T155 · S22 · V18</span>
+          <span class="day__chev" aria-hidden="true"></span>
+        </button>
+        <div class="day__body" id="stv-body" role="region" aria-labelledby="stv-btn">
+          <div class="meal">
+            <div class="meal__tag meal__tag--r">Raňajky</div>
+            <h3 class="meal__name">Žemľa + vajcia so slaninou</h3>
+            <ul class="meal__grams">
+              <li>1 keto žemľa</li>
+              <li>2 vajcia</li>
+              <li>slanina <strong>40&nbsp;g</strong></li>
+              <li>syr <strong>20&nbsp;g</strong></li>
+            </ul>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--o">Obed</div>
+            <h3 class="meal__name">Hovädzí steak + kapusta</h3>
+            <ul class="meal__grams">
+              <li>steak <strong>239&nbsp;g</strong></li>
+              <li>kapusta <strong>200&nbsp;g</strong></li>
+              <li>maslo</li>
+            </ul>
+            <p class="tip" role="note">
+              <span class="tip__label">Tip</span>
+              Steak na horúcej panvici; odpočinok 3&nbsp;min.
+            </p>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--v">Večera</div>
+            <h3 class="meal__name">Tatár / mleté (upečené!) + šalát + bryndza</h3>
+            <ul class="meal__grams">
+              <li>tatár / mleté <strong>200&nbsp;g</strong> — <strong>upečené</strong>, nie surové</li>
+              <li>šalát</li>
+              <li>bryndza <strong>50&nbsp;g</strong></li>
+              <li>+ olej / majo</li>
+            </ul>
+            <p class="tip tip--warn" role="note">
+              <span class="tip__label">Tip</span>
+              Dobre orestovať — nie jesť surové.
+            </p>
+          </div>
+          <p class="shake-line"><span class="pill pill--sm">+ shake</span> kokosové mlieko · proteín · kakao · chia</p>
+        </div>
+      </article>
+
+      <!-- Piatok -->
+      <article id="pia" class="day day--light" data-day="pia">
+        <button type="button" class="day__toggle" aria-expanded="true" aria-controls="pia-body" id="pia-btn">
+          <span class="day__name">Piatok</span>
+          <span class="day__totals">~1135 kcal · P70 · T90 · S12 · V10 · len R+O</span>
+          <span class="day__chev" aria-hidden="true"></span>
+        </button>
+        <div class="day__body" id="pia-body" role="region" aria-labelledby="pia-btn">
+          <div class="meal">
+            <div class="meal__tag meal__tag--r">Raňajky</div>
+            <h3 class="meal__name">Žemľa + vajcia so slaninou</h3>
+            <ul class="meal__grams">
+              <li>1 keto žemľa</li>
+              <li>2 vajcia</li>
+              <li>slanina <strong>40&nbsp;g</strong></li>
+            </ul>
+          </div>
+          <div class="meal">
+            <div class="meal__tag meal__tag--o">Obed</div>
+            <h3 class="meal__name">Zvyšky — slanina, zelenina, syry, arašidy</h3>
+            <ul class="meal__grams">
+              <li>zvyšková slanina <strong>~70&nbsp;g</strong></li>
+              <li>zvyšková kapusta / šalát</li>
+              <li>zvyškové syry</li>
+              <li>arašidy</li>
+            </ul>
+          </div>
+          <p class="day-note day-note--muted">Bez večere a bez shake — ľahký deň.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recipe -->
+    <section id="zemle" class="card card--recipe" aria-labelledby="zemle-title">
+      <h2 id="zemle-title">Keto žemle</h2>
+      <p class="recipe__yield">6 žemlí · 175&nbsp;°C · 50–60&nbsp;min · nechať úplne vychladnúť</p>
+      <ul class="recipe__ing">
+        <li><strong>150&nbsp;g</strong> mandľová múka</li>
+        <li><strong>25&nbsp;g</strong> psyllium</li>
+        <li><strong>2 lyžičky</strong> prášok do pečiva</li>
+        <li><strong>½ lyžičky</strong> soľ</li>
+        <li><strong>3</strong> bielka</li>
+        <li>voliteľne ocot</li>
+        <li><strong>200–230&nbsp;ml</strong> horúca voda</li>
+      </ul>
+      <ol class="recipe__steps">
+        <li>Zmiešať suché suroviny.</li>
+        <li>Pridať bielka, ocot (ak používaš) a horúcu vodu — rýchlo vymiešať.</li>
+        <li>Tvarovať 6 žemlí, piecť 50–60&nbsp;min pri 175&nbsp;°C.</li>
+        <li>Nechať úplne vychladnúť — inak budú gumové.</li>
+      </ol>
+    </section>
+
+    <!-- Leftovers -->
+    <section id="zvysky" class="card card--parents" aria-labelledby="zvysky-title">
+      <h2 id="zvysky-title">Zvyšky pre rodičov</h2>
+      <ul class="parents-list">
+        <li>1 žemľa</li>
+        <li>slanina <strong>~130&nbsp;g</strong></li>
+        <li>arašidy</li>
+        <li>zvyškový syr / bryndza</li>
+        <li>šalát / kapusta (ak ostane)</li>
+        <li>nepoužité konzervy tuniaka</li>
+      </ul>
+    </section>
+
+    <footer class="site-foot">
+      <p>Samuelov keto pack · 21.–25.&nbsp;9.&nbsp;2026</p>
+      <p class="site-foot__sub">Lokálne úložisko: zaškrtnutia nákupu sa pamätajú v prehliadači.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
