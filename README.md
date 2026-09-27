@@ -1,16 +1,25 @@
-# Keto týždeň · 21.–25. 9. 2026
+# Keto týždeň
 
 Mobilný statický meal-pack pre Samuela (slovenčina). Čistý HTML/CSS/JS — bez buildu.
 
+**Live:** https://samikok19.github.io/keto-tyzden/
+
 ## Súbory
 
-- `index.html` — obsah (dni, nákup, recept, zvyšky)
+- `index.html` — shell + dropdown týždňov
 - `styles.css` — mobile-first dark-green dizajn
-- `app.js` — localStorage pre checkboxy a otvorené dni
+- `app.js` — dáta týždňov, render, localStorage (samostatný kľúč na týždeň)
+
+## Týždne (história)
+
+| Od–do | Poznámka |
+|-------|----------|
+| 28. 9. – 2. 10. 2026 | predvolený (nový) |
+| 21. 9. – 25. 9. 2026 | archív (pôvodný obsah) |
+
+Dropdown hore prepína týždne. URL stránky ostáva rovnaká.
 
 ## Lokálne
-
-Otvor `index.html` v prehliadači, alebo:
 
 ```bash
 cd keto-tyzden
@@ -18,49 +27,12 @@ python3 -m http.server 8080
 # → http://localhost:8080
 ```
 
-## Deploy na GitHub Pages
+## Deploy (GitHub Pages)
 
-### Varianta A — root repozitára
-
-1. Vytvor nový repo (napr. `keto-tyzden`).
-2. Nahraj obsah tohto priečinka do **rootu** (nie do podpriečinka).
-3. **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch**
-   - Branch: `main` (alebo `master`), folder: **/ (root)**
-4. Po 1–2 minútach: `https://<user>.github.io/keto-tyzden/`
-
-```bash
-git init
-git add index.html styles.css app.js README.md
-git commit -m "Keto týždeň 21.–25. 9. 2026"
-git branch -M main
-git remote add origin https://github.com/<user>/keto-tyzden.git
-git push -u origin main
-```
-
-### Varianta B — priečinok `/docs`
-
-1. V existujúcom repo vytvor `docs/` a skopíruj sem súbory.
-2. Pages → Branch `main`, folder: **/docs**.
-
-### Varianta C — GitHub CLI
-
-```bash
-gh repo create keto-tyzden --public --source=. --remote=origin --push
-# potom v UI zapni Pages (main / root), alebo:
-gh api -X PUT repos/<user>/keto-tyzden/pages \
-  -f build_type=legacy \
-  -f source[branch]=main \
-  -f source[path]=/
-```
+Branch `master`, folder `/ (root)` → `https://samikok19.github.io/keto-tyzden/`
 
 ## Poznámky
 
-- Checkboxy nákupu sa ukladajú do `localStorage` (kľúč `keto-tyzden-2026-09-21`).
-- Tlačidlo **Reset** odškrtne všetky položky.
-- Žiadny service worker / CDN build — funguje aj offline po prvom načítaní fontov (Google Fonts; bez siete ostane systémový font).
-
-## Obsah týždňa (zámok)
-
-~10 620 kcal · P ~870 g · T ~705 g · S ~112 g · vláknina ~89 g  
-Po–Pia podľa `index.html`. Nesmú sa meniť gramáže bez súhlasu.
+- Checkboxy: `keto-tyzden-2026-09-21` / `keto-tyzden-2026-09-28` (+ day-open kľúče).
+- Tlačidlo **Reset** odškrtne položky aktuálneho týždňa.
+- Žiadny service worker — funguje offline po načítaní fontov.
