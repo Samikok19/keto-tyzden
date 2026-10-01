@@ -5,6 +5,36 @@
   var DEFAULT_WEEK = "2026-09-28";
   var WEEK_ORDER = ["2026-09-28", "2026-09-21"];
   var SELECT_KEY = "keto-tyzden-selected-week";
+  var VIEW_KEY = "keto-tyzden-view"; // "week" or "list"
+
+  /* =====================================================================
+     SHOPPING_LIST — Standalone persistent shopping list
+     =====================================================================
+     This list is NOT tied to any specific meal week. Samuel (or bots) can
+     edit this list directly in the repo, push, and GitHub Pages redeploys.
+
+     UPDATE MODES (for future edits by bots or humans):
+     ---------------------------------------------------
+     1. REPLACE MODE — overwrite the entire items array:
+        Simply replace the SHOPPING_LIST.items array with a new array.
+
+     2. APPEND MODE — keep existing items + add new ones:
+        Push new item objects to the end of SHOPPING_LIST.items array.
+        Each item needs a unique "key" property.
+
+     Item structure:
+       { key: "unique-key", text: "Item name", em: "optional amount/note" }
+
+     The "key" must be unique across all items (used for localStorage state).
+     The "em" field is optional — displays as lighter text after the item name.
+     ===================================================================== */
+  var SHOPPING_LIST = {
+    storageKey: "keto-standalone-shopping-list",
+    items: [
+      // Seed with placeholder — delete or replace as needed
+      // { key: "example-item", text: "Príklad položky", em: "1 ks" }
+    ]
+  };
 
   var WEEKS = {
     "2026-09-21": {
@@ -697,6 +727,62 @@
     );
   }
 
+  /* ===== Render Standalone Shopping List ===== */
+  function renderShoppingList() {
+    var items = SHOPPING_LIST.items;
+    var isEmpty = items.length === 0;
+
+    var content;
+    if (isEmpty) {
+      content =
+        '<p class="shop-empty">Zoznam je prázdny. Pridaj položky do <code>SHOPPING_LIST.items</code> v app.js.</p>';
+    } else {
+      content =
+        '<ul class="checklist' + (items.length > 4 ? " checklist--grid" : "") + '" data-store="standalone">' +
+        items.map(renderCheck).join("") +
+        "</ul>";
+    }
+
+    return (
+      '<section class="card card--shop" aria-labelledby="list-title">' +
+      '<div class="card__head">' +
+      '<h2 id="list-title">Nákupný zoznam</h2>' +
+      '<button type="button" class="btn-ghost" id="reset-list-checks" title="Odškrtnúť všetko">Reset</button>' +
+      "</div>" +
+      '<div class="shop-block">' + content + "</div>" +
+      "</section>" +
+      '<footer class="site-foot">' +
+      "<p>Samostatný nákupný zoznam</p>" +
+      '<p class="site-foot__sub">Zaškrtnutia sa pamätajú v prehliadači. Položky edituj v app.js.</p>' +
+      "</footer>"
+    );
+  }
+
+  function bindShoppingList() {
+    var state = loadJson(SHOPPING_LIST.storageKey);
+    var boxes = document.querySelectorAll('input[type="checkbox"][data-key]');
+
+    boxes.forEach(function (input) {
+      var key = input.getAttribute("data-key");
+      if (state[key]) input.checked = true;
+      input.addEventListener("change", function () {
+        state[key] = input.checked;
+        saveJson(SHOPPING_LIST.storageKey, state);
+      });
+    });
+
+    var resetBtn = document.getElementById("reset-list-checks");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        boxes.forEach(function (input) {
+          input.checked = false;
+          state[input.getAttribute("data-key")] = false;
+        });
+        saveJson(SHOPPING_LIST.storageKey, state);
+      });
+    }
+  }
+
   function renderWeek(week) {
     var s = week.summary;
     var macros = s.macros
@@ -854,6 +940,67 @@
     if (sel && sel.value !== id) sel.value = id;
   }
 
+  function showShoppingListView() {
+    var titleEl = document.getElementById("week-title");
+    if (titleEl) titleEl.innerHTML = "Nákupný zoznam";
+
+    document.title = "Nákupný zoznam";
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", "Samostatný nákupný zoznam");
+
+    var root = document.getElementById("app-root");
+    root.innerHTML = renderShoppingList();
+    bindShoppingList();
+  }
+
+  /* ===== View switching ===== */
+  function getView() {
+    try {
+      var v = localStorage.getItem(VIEW_KEY);
+      return v === "list" ? "list" : "week";
+    } catch (e) {
+      return "week";
+    }
+  }
+
+  function setView(v) {
+    try {
+      localStorage.setItem(VIEW_KEY, v);
+    } catch (e) {
+      /* ignore */
+    }
+  }
+
+  function updateNavActive(view) {
+    var weekTab = document.getElementById("nav-week");
+    var listTab = document.getElementById("nav-list");
+    if (weekTab) weekTab.classList.toggle("nav__tab--active", view === "week");
+    if (listTab) listTab.classList.toggle("nav__tab--active", view === "list");
+  }
+
+  function updateHeaderForView(view) {
+    var weekPicker = document.querySelector(".week-picker");
+    var jumpNav = document.getElementById("jump-nav");
+    if (view === "list") {
+      if (weekPicker) weekPicker.style.display = "none";
+      if (jumpNav) jumpNav.style.display = "none";
+    } else {
+      if (weekPicker) weekPicker.style.display = "";
+      if (jumpNav) jumpNav.style.display = "";
+    }
+  }
+
+  function switchToView(view) {
+    setView(view);
+    updateNavActive(view);
+    updateHeaderForView(view);
+    if (view === "list") {
+      showShoppingListView();
+    } else {
+      showWeek(getSelectedWeekId());
+    }
+  }
+
   function initSelect() {
     var sel = document.getElementById("week-select");
     if (!sel) return;
@@ -868,6 +1015,26 @@
     });
   }
 
+  function initNav() {
+    var weekTab = document.getElementById("nav-week");
+    var listTab = document.getElementById("nav-list");
+
+    if (weekTab) {
+      weekTab.addEventListener("click", function (e) {
+        e.preventDefault();
+        switchToView("week");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (listTab) {
+      listTab.addEventListener("click", function (e) {
+        e.preventDefault();
+        switchToView("list");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  }
+
   /* Migrate old day-open key once (week 1) */
   try {
     var legacyDay = localStorage.getItem("keto-tyzden-days-open");
@@ -879,5 +1046,13 @@
   }
 
   initSelect();
-  showWeek(getSelectedWeekId());
+  initNav();
+  var currentView = getView();
+  updateNavActive(currentView);
+  updateHeaderForView(currentView);
+  if (currentView === "list") {
+    showShoppingListView();
+  } else {
+    showWeek(getSelectedWeekId());
+  }
 })();
