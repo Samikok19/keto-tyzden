@@ -2,8 +2,8 @@
   "use strict";
 
   /* ===== Weeks data (newest first in ORDER) ===== */
-  var DEFAULT_WEEK = "2026-09-28";
-  var WEEK_ORDER = ["2026-09-28", "2026-09-21"];
+  var DEFAULT_WEEK = "2026-10-04";
+  var WEEK_ORDER = ["2026-10-04", "2026-09-28", "2026-09-21"];
   var SELECT_KEY = "keto-tyzden-selected-week";
   var VIEW_KEY = "keto-tyzden-view"; // "week" or "list"
 
@@ -618,6 +618,121 @@
         { t: "šunka", g: "~60\u00a0g" },
         { t: "šalát / kapusta (ak ostane)" }
       ]
+    },
+
+    "2026-10-04": {
+      id: "2026-10-04",
+      storageKey: "keto-tyzden-2026-10-04",
+      dayKey: "keto-tyzden-days-open-2026-10-04",
+      label: "4. 10. 2026 (nedeľa)",
+      title: "Nedeľa 4.\u00a010.\u00a02026",
+      foot: "Samuelov keto mini-balík · nedeľa 4.\u00a010.\u00a02026 · Kaufland Sekčov",
+      summary: {
+        kcal: "2\u00a0950",
+        macros: [
+          { k: "P", v: "~215\u00a0g" },
+          { k: "T", v: "~200\u00a0g" },
+          { k: "S", v: "~25\u00a0g" },
+          { k: "V", v: "~18\u00a0g" }
+        ],
+        note: "Mini nedeľa · Pia večer + So mimo · tréning ~2800–3000 · shake pantrý",
+        shake: "kokosové mlieko + proteín + kakao + chia · ~280 kcal · P~35 (pantrý)",
+        shakePill: "Shake ak tréning (pantrý)"
+      },
+      shopTitle: "Nákup — Kaufland Sekčov (nedeľa)",
+      buyTitle: "Dokúpiť (checklist)",
+      haveTitle: "Pantrý / zvyšky — skontrolovať",
+      buy: [
+        { key: "n1004-buy-chicken", text: "Kuracie stehná", em: "~400\u00a0g" },
+        { key: "n1004-buy-beef", text: "Hovädzie mleté 100\u00a0%", em: "1×500\u00a0g" },
+        { key: "n1004-buy-veg", text: "Brokolica / zelenina", em: "~300–400\u00a0g (len ak nemá zvyšok)" },
+        { key: "n1004-buy-eggs", text: "Vajcia", em: "+6–10 ks (len ak treba)" },
+        { key: "n1004-buy-butter", text: "Maslo / majonéza", em: "len ak treba" }
+      ],
+      have: [
+        { key: "n1004-have-bacon", text: "Slanina (zvyšok)" },
+        { key: "n1004-have-ham", text: "Šunka (zvyšok)" },
+        { key: "n1004-have-cheese", text: "Syr / bryndza" },
+        { key: "n1004-have-cabbage", text: "Kapusta / šalát (zvyšok)" },
+        { key: "n1004-have-bun", text: "Keto žemľa (ak ostala)" },
+        { key: "n1004-have-eggs", text: "Vajcia" },
+        { key: "n1004-have-butter", text: "Maslo" },
+        { key: "n1004-have-oil", text: "Olej / majonéza" },
+        { key: "n1004-have-pickles", text: "Kyslé uhorky" },
+        { key: "n1004-have-shake", text: "Shake pantrý" }
+      ],
+      dont: [
+        "kokos",
+        "ocot",
+        "olivy",
+        "huby",
+        "cuketa",
+        "ketomúka"
+      ],
+      dontNote: "Preferencia A: kura ~400\u00a0g obed + hovädzie 1×500\u00a0g večera. Fallback B: kura ~800\u00a0g obed+večera (bez hovädzieho). Fallback C: obed kura 400 + večera losos 2×250 alebo krevety 500\u00a0g. Šunka OK.",
+      days: [
+        {
+          id: "ne",
+          name: "Nedeľa",
+          totals: "~2950 kcal · P215 · T200 · S25 · V18",
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "Žemľa alebo vajcia + slanina/šunka",
+              items: [
+                { t: "1 keto žemľa (ak ostala)", hint: "ALEBO" },
+                { t: "3 vajcia na masle", hint: "(~15\u00a0g masla)" },
+                { t: "slanina", g: "50\u00a0g", hint: "(zvyšok) ALEBO šunka ~50\u00a0g" },
+                { t: "bryndza / syr", g: "~25\u00a0g" },
+                { t: "kyslé uhorky" }
+              ]
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Kuracie stehná + zelenina",
+              items: [
+                { t: "kuracie stehná", g: "400\u00a0g" },
+                { t: "kapusta / šalát / brokolica", g: "~200\u00a0g" },
+                { t: "olej", g: "~15\u00a0ml" },
+                { t: "majonéza", g: "~20\u00a0g" }
+              ],
+              tip: "Stehná pečené/restované; zeleninu neprevariť."
+            },
+            {
+              tag: "v",
+              tagLabel: "Večera",
+              name: "Hovädzie placky 500\u00a0g + zelenina + syr",
+              items: [
+                { t: "hovädzie mleté (placky)", g: "500\u00a0g", hint: "(celé balenie)" },
+                { t: "zelenina", g: "~150–200\u00a0g" },
+                { t: "syr / bryndza", g: "~40\u00a0g" },
+                { t: "+ majo / olej" }
+              ],
+              tip: "Celé 500\u00a0g — zero waste, žiadne zvyšky mäsa. Placky poriadne prepiecť."
+            }
+          ],
+          shake: true
+        }
+      ],
+      recipe: {
+        yield: "Žemľa zo zvyškov, ak je · inak raňajky bez pečenia (vajcia)",
+        ingredients: [
+          { t: "ak pečieš nové: mandľová múka + psyllium (doma) — tento mini-balík pečenie nevyžaduje" }
+        ],
+        steps: [
+          "Ak ostala žemľa z minulého týždňa — použiť na raňajky.",
+          "Ak nie — 3 vajcia na masle + slanina/šunka + bryndza/syr.",
+          "Pečenie nových žemlí tento mini-balík nevyžaduje."
+        ]
+      },
+      leftovers: [
+        { t: "mäso by nemalo zostať (celé balenia)" },
+        { t: "zvyšok zeleniny / šalátu (ak ostane)" },
+        { t: "syr / bryndza (ak ostane)" },
+        { t: "slanina / šunka (ak ostane)" }
+      ]
     }
   };
 
@@ -920,6 +1035,26 @@
     });
   }
 
+  var JUMP_SHORT = {
+    po: "Po",
+    ut: "Ut",
+    st: "St",
+    stv: "Št",
+    pia: "Pia",
+    ne: "Ne"
+  };
+
+  function updateJumpNav(week) {
+    var jumpNav = document.getElementById("jump-nav");
+    if (!jumpNav || !week) return;
+    var parts = ['<a href="#nakup">Nákup</a>'];
+    (week.days || []).forEach(function (d) {
+      var short = JUMP_SHORT[d.id] || (d.name ? d.name.slice(0, 2) : d.id);
+      parts.push('<a href="#' + esc(d.id) + '">' + esc(short) + "</a>");
+    });
+    jumpNav.innerHTML = parts.join("\n        ");
+  }
+
   function showWeek(id) {
     var week = WEEKS[id];
     if (!week) return;
@@ -931,6 +1066,8 @@
     document.title = "Keto týždeň · " + week.label;
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", "Samuelov keto týždenný meal pack — " + week.label);
+
+    updateJumpNav(week);
 
     var root = document.getElementById("app-root");
     root.innerHTML = renderWeek(week);
