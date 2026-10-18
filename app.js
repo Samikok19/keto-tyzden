@@ -2,8 +2,8 @@
   "use strict";
 
   /* ===== Weeks data (newest first in ORDER) ===== */
-  var DEFAULT_WEEK = "2026-10-12";
-  var WEEK_ORDER = ["2026-10-12", "2026-10-05", "2026-10-04", "2026-09-28", "2026-09-21"];
+  var DEFAULT_WEEK = "2026-10-19";
+  var WEEK_ORDER = ["2026-10-19", "2026-10-12", "2026-10-05", "2026-10-04", "2026-09-28", "2026-09-21"];
   var SELECT_KEY = "keto-tyzden-selected-week";
   var VIEW_KEY = "keto-tyzden-view"; // "week" or "list"
 
@@ -1332,6 +1332,313 @@
         { t: "kus kapusty" },
         { t: "otvorené kokosové mlieko" },
         { t: "kyslé uhorky" }
+      ]
+    },
+
+    "2026-10-19": {
+      id: "2026-10-19",
+      storageKey: "keto-tyzden-2026-10-19",
+      dayKey: "keto-tyzden-days-open-2026-10-19",
+      label: "19. 10. – 23. 10. 2026",
+      title: "Týždeň 19.–23.\u00a010.\u00a02026",
+      foot: "Samuelov keto pack · 19.–23.\u00a010.\u00a02026 · Kaufland Sekčov",
+      summary: {
+        kcal: "12\u00a0900",
+        macros: [
+          { k: "P", v: "~957\u00a0g" },
+          { k: "T", v: "~885\u00a0g" },
+          { k: "S", v: "~117\u00a0g" },
+          { k: "V", v: "~98\u00a0g" }
+        ],
+        note: "Po–Št plné · Pia len R+O · bez Pia večere, bez víkendu · Kaufland Sekčov",
+        shake: "kokosové mlieko LEN nesladené + proteín + kakao + chia · ak niet nesladeného → shake z pantrý",
+        shakePill: "Shake Po–Št"
+      },
+      shopTitle: "Nákup — Kaufland Sekčov",
+      buyTitle: "Kúpiť (checklist)",
+      haveTitle: "Pantrý — skontrolovať doma",
+      buy: [
+        { key: "w1019-chicken", text: "Kuracie stehná", em: "~800\u00a0g vážené (Po O 400 + Ut O 400) · ak nie sú → vykostené stehná / prsia, rovnaké gramáže" },
+        { key: "w1019-beef", text: "Hovädzie mleté 100\u00a0%", em: "1×1\u00a0kg (Po V 400 + St O 300 + Št pizza 300) · ak nie je → 2×500\u00a0g · len 400\u00a0g balenia → 2×400\u00a0g (St a Št po 200\u00a0g + 1 vajce navyše), 3×400\u00a0g nekupovať · nie bravčové, nie mix" },
+        { key: "w1019-salmon", text: "Losos čerstvý vážený", em: "~500\u00a0g z pultu (Ut V 250 + St V 250) · mrazený 250\u00a0g v letáku nie je" },
+        { key: "w1019-shrimp", text: "Krevety mrazené", em: "1×500\u00a0g alebo 2×250\u00a0g · overiť mrazák · ak nie sú → kuracie stehná +400\u00a0g" },
+        { key: "w1019-bacon", text: "Slanina", em: "2×100\u00a0g = 200\u00a0g" },
+        { key: "w1019-ham", text: "Šunka", em: "2×100\u00a0g = 200\u00a0g" },
+        { key: "w1019-eggs", text: "Vajcia", em: "20 ks (2×10) · ak doma <5 ks → 30 ks" },
+        { key: "w1019-butter", text: "Maslo", em: "250\u00a0g" },
+        { key: "w1019-bryndza", text: "Bryndza", em: "~250\u00a0g alebo 2×110\u00a0g" },
+        { key: "w1019-eidam", text: "Eidam", em: "2×100\u00a0g · ak nie je → Emmental 200\u00a0g" },
+        { key: "w1019-broc", text: "Brokolica", em: "~550\u00a0g · mrazená OK · alebo karfiol (1 ks ~550\u00a0g)" },
+        { key: "w1019-cabbage", text: "Kapusta", em: "1 menšia hlávka (biela / červená z police) · ak nie je → brokolica / karfiol" },
+        { key: "w1019-pepper", text: "Paprika", em: "1×500\u00a0g balenie (St plnené papriky 2 ks + Ut + pizza)" },
+        { key: "w1019-salad", text: "Šalát ľadový", em: "1 ks" },
+        { key: "w1019-pickles", text: "Kyslé uhorky", em: "1 pohár (ak doma nie je načatý)" },
+        { key: "w1019-lemon", text: "Citrón", em: "2 ks (ak doma nie je)" },
+        { key: "w1019-garlic", text: "Cesnak", em: "podľa potreby (ak nie je doma)" },
+        { key: "w1019-almond", text: "Mandľová múka alebo mleté mandle", em: "~250\u00a0g · NIE pšeničná · fallback: lúpané mandle 3×100\u00a0g zomlieť" },
+        { key: "w1019-coco", text: "Kokosové mlieko LEN nesladené", em: "1–2×400\u00a0ml · sladené NIE" },
+        { key: "w1019-bp", text: "Prášok do pečiva", em: "1 ks (len ak dochádza)" }
+      ],
+      have: [
+        { key: "w1019-have-psyllium", text: "Psyllium (doma — nekupovať)" },
+        { key: "w1019-have-acv", text: "Jablčný ocot (doma — nekupovať)" },
+        { key: "w1019-have-protein", text: "Proteín (shake)" },
+        { key: "w1019-have-cocoa", text: "Kakao" },
+        { key: "w1019-have-chia", text: "Chia" },
+        { key: "w1019-have-ery", text: "Erytritol" },
+        { key: "w1019-have-oil", text: "Olej / majonéza" },
+        { key: "w1019-have-salt", text: "Soľ" },
+        { key: "w1019-have-left", text: "Zvyšky z minulého týždňa (slanina ~40\u00a0g, šunka ~60\u00a0g, kapusta) — zjesť v pondelok ako prvé" }
+      ],
+      dont: [
+        "jablčný ocot (doma)",
+        "ketomúka",
+        "olivy",
+        "huby",
+        "cuketa",
+        "bravčové mleté",
+        "pšeničná múka",
+        "sladené kokosové mlieko"
+      ],
+      dontNote: "Etikety: kokosové mlieko LEN nesladené (sladené NIE; ak nie je → shake z pantrý). Mandľová múka / mleté mandle, NIE pšeničná (ak nie je → lúpané mandle 3×100\u00a0g a zomlieť doma). Ocot, ketomúka, psyllium, olej a majonézu nekupovať. Hovädzie 1×1\u00a0kg: Po V 400 + St O 300 + Št pizza 300; ak sú len 400\u00a0g balenia → 2×400\u00a0g a St aj Št po 200\u00a0g + 1 vajce navyše (3×400\u00a0g nekupovať). Eidam nie je → Emmental 200\u00a0g. Brokolica: mrazená OK alebo karfiol. Ak nie sú krevety: kuracie stehná +400\u00a0g, v pondelok zamraziť, v stredu večer do chladničky → Št O 200\u00a0g + Pia O 200\u00a0g.",
+      days: [
+        {
+          id: "po",
+          name: "Pondelok",
+          totals: "~2950 kcal · P220 · T205 · S25 · V20",
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "Žemľa + vajcia na masle so slaninou a bryndzou",
+              items: [
+                { t: "1 keto žemľa" },
+                { t: "3 vajcia na masle" },
+                { t: "slanina", g: "60\u00a0g" },
+                { t: "bryndza", g: "30\u00a0g" }
+              ],
+              tip: "Zvyšky z minulého týždňa (slanina ~40\u00a0g, šunka ~60\u00a0g, kapusta) zjesť dnes ako prvé."
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Kuracie stehná pečené s cesnakom + restovaná kapusta",
+              items: [
+                { t: "kuracie stehná", g: "400\u00a0g" },
+                { t: "kapusta restovaná", g: "200\u00a0g" },
+                { t: "+ olej + cesnak" }
+              ],
+              tip: "Ak nie sú krevety: dnes zamraziť extra 400\u00a0g kuracích stehien (na Št + Pia obed)."
+            },
+            {
+              tag: "v",
+              tagLabel: "Večera",
+              name: "Hovädzie burger placky + eidam + šalát",
+              items: [
+                { t: "hovädzie mleté (placky)", g: "400\u00a0g" },
+                { t: "eidam", g: "40\u00a0g" },
+                { t: "kyslé uhorky" },
+                { t: "ľadový šalát" },
+                { t: "+ majonéza" }
+              ],
+              tip: "Z 1\u00a0kg balenia: 400\u00a0g dnes, zvyšok 300 + 300\u00a0g na St a Št. Ak sú len 2×400\u00a0g: dnes 400\u00a0g, St a Št po 200\u00a0g."
+            }
+          ],
+          shake: true
+        },
+        {
+          id: "ut",
+          name: "Utorok",
+          totals: "~2850 kcal · P215 · T195 · S24 · V19",
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "Žemľa + vajcia so šunkou",
+              items: [
+                { t: "1 keto žemľa" },
+                { t: "3 vajcia" },
+                { t: "šunka", g: "70\u00a0g" },
+                { t: "kyslé uhorky" }
+              ]
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Kuracie stehná + paprika + šalát + bryndza",
+              items: [
+                { t: "kuracie stehná", g: "400\u00a0g" },
+                { t: "paprika", g: "1 ks" },
+                { t: "ľadový šalát" },
+                { t: "bryndza", g: "50\u00a0g" },
+                { t: "+ olej" }
+              ]
+            },
+            {
+              tag: "v",
+              tagLabel: "Večera",
+              name: "Losos + brokolica + maslo + citrón",
+              items: [
+                { t: "losos", g: "250\u00a0g" },
+                { t: "brokolica", g: "200\u00a0g" },
+                { t: "maslo", g: "15\u00a0g" },
+                { t: "citrón" }
+              ],
+              tip: "Losos na masle s citrónom; brokolicu neprevariť (mrazená OK, alebo karfiol)."
+            }
+          ],
+          shake: true
+        },
+        {
+          id: "st",
+          name: "Streda",
+          totals: "~2900 kcal · P212 · T200 · S28 · V21",
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "Žemľa + vajcia so slaninou a syrom",
+              items: [
+                { t: "1 keto žemľa" },
+                { t: "3 vajcia" },
+                { t: "slanina", g: "60\u00a0g" },
+                { t: "syr", g: "20\u00a0g" }
+              ]
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Novinka: plnené papriky bez ryže",
+              items: [
+                { t: "hovädzie mleté s cesnakom", g: "300\u00a0g" },
+                { t: "2 papriky (plnka)" },
+                { t: "eidam", g: "40\u00a0g" },
+                { t: "2 vajcia natvrdo" },
+                { t: "kyslé uhorky" }
+              ],
+              tip: "Papriky naplniť mäsom, posypať eidamom, zapiecť 200\u00a0°C ~25\u00a0min. Bez ryže. Ak len 2×400\u00a0g hovädzieho: 200\u00a0g mäsa + 1 vajce navyše."
+            },
+            {
+              tag: "v",
+              tagLabel: "Večera",
+              name: "Losos + brokolica + citrón",
+              items: [
+                { t: "losos", g: "250\u00a0g" },
+                { t: "brokolica", g: "200\u00a0g" },
+                { t: "maslo / majonéza" },
+                { t: "citrón" }
+              ],
+              tip: "Fallback (ak neboli krevety): večer presunúť zamrazené kura 400\u00a0g do chladničky (na Št + Pia obed).",
+              tipWarn: true
+            }
+          ],
+          shake: true
+        },
+        {
+          id: "stv",
+          name: "Štvrtok",
+          totals: "~2850 kcal · P215 · T190 · S28 · V25",
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "Žemľa + vajcia so šunkou a syrom",
+              items: [
+                { t: "1 keto žemľa" },
+                { t: "3 vajcia" },
+                { t: "šunka", g: "70\u00a0g" },
+                { t: "syr", g: "20\u00a0g" }
+              ]
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Krevety na masle s cesnakom + restovaná kapusta",
+              items: [
+                { t: "krevety", g: "250\u00a0g" },
+                { t: "zvyšok kapusty restovanej", g: "~200\u00a0g" },
+                { t: "maslo + cesnak + citrón" }
+              ],
+              tip: "Ak nie sú krevety: kuracie stehná 200\u00a0g (rozmrazené od stredy večer), tá istá príloha.",
+              tipWarn: true
+            },
+            {
+              tag: "v",
+              tagLabel: "Večera",
+              name: "Mini keto pizza",
+              items: [
+                { t: "cesto: mandľová múka / mleté mandle", g: "~70\u00a0g", hint: "(nie pšeničná)" },
+                { t: "+ psyllium (doma) + 1 vajce + soľ" },
+                { t: "navrch hovädzie mleté", g: "300\u00a0g" },
+                { t: "eidam", g: "70\u00a0g" },
+                { t: "paprika" }
+              ],
+              tip: "Bez olív, húb a cukety. Mandľová nie pšeničná — ak nie je, zomlieť lúpané mandle. Ak len 2×400\u00a0g hovädzieho: 200\u00a0g mäsa + 1 vajce navyše.",
+              tipWarn: true
+            }
+          ],
+          shake: true
+        },
+        {
+          id: "pia",
+          name: "Piatok",
+          totals: "~1350 kcal · P95 · T95 · S12 · V13 · len R+O",
+          light: true,
+          meals: [
+            {
+              tag: "r",
+              tagLabel: "Raňajky",
+              name: "2 žemle + vajcia so slaninou",
+              items: [
+                { t: "2 keto žemle (posledné z dávky)" },
+                { t: "2 vajcia" },
+                { t: "slanina", g: "40\u00a0g" },
+                { t: "kyslé uhorky" }
+              ]
+            },
+            {
+              tag: "o",
+              tagLabel: "Obed",
+              name: "Krevetový šalát",
+              items: [
+                { t: "krevety", g: "250\u00a0g" },
+                { t: "zvyšok šalátu / papriky" },
+                { t: "brokolica", g: "150\u00a0g" },
+                { t: "+ majonéza" },
+                { t: "1 vajce natvrdo" }
+              ],
+              tip: "Ak nie sú krevety: kuracie stehná 200\u00a0g (rozmrazené od stredy večer), tá istá príloha.",
+              tipWarn: true
+            }
+          ],
+          footerNote: "Bez večere, bez víkendu — len raňajky a obed."
+        }
+      ],
+      recipe: {
+        yield: "6 žemlí · nedeľa večer / Po ráno · 175\u00a0°C · 50–60\u00a0min · úplne vychladnúť · spotreba všetkých 6 (Pia 2 ks)",
+        ingredients: [
+          { g: "150\u00a0g", t: "mandľová múka (nie pšeničná)" },
+          { g: "25\u00a0g", t: "psyllium (doma)" },
+          { g: "~8\u00a0g", t: "prášok do pečiva" },
+          { g: "~3\u00a0g", t: "soľ" },
+          { g: "3", t: "bielka" },
+          { t: "2 lyžičky jablčného octu (doma)" },
+          { g: "200–230\u00a0ml", t: "horúca voda" }
+        ],
+        steps: [
+          "Zmiešať suché suroviny (mandľová múka, psyllium, prášok, soľ).",
+          "Pridať 3 bielka, 2 lyžičky jablčného octu a 200–230\u00a0ml horúcej vody — rýchlo vymiešať.",
+          "Tvarovať 6 žemlí, piecť 50–60\u00a0min pri 175\u00a0°C.",
+          "Nechať úplne vychladnúť — inak budú gumové."
+        ]
+      },
+      leftovers: [
+        { t: "zvyšok bryndze", g: "~90\u00a0g" },
+        { t: "slanina", g: "~40\u00a0g" },
+        { t: "šunka", g: "~60\u00a0g" },
+        { t: "otvorené kokosové mlieko" },
+        { t: "kyslé uhorky" },
+        { t: "prípadne 1 paprika" }
       ]
     }
   };
