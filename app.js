@@ -1650,67 +1650,66 @@
       dayKey: "keto-tyzden-days-open-2026-10-26",
       label: "26. 10. – 30. 10. 2026",
       title: "Týždeň 26.–30.\u00a010.\u00a02026",
-      foot: "Samuelov keto pack · 26.–30.\u00a010.\u00a02026 · Kaufland Sekčov",
+      foot: "Samuelov keto pack · 26.–30.\u00a010.\u00a02026 · v2 (bez pizze, Št air fryer) · Kaufland Sekčov",
       driveUrl: "https://docs.google.com/spreadsheets/d/1cgBCn6Y0WYSug6dKJjIJDedjiBefvIuo9O52Lgv7c0o/edit",
       summary: {
-        kcal: "13\u00a0350",
+        kcal: "13\u00a0215",
         macros: [
-          { k: "P", v: "~1045\u00a0g" },
-          { k: "T", v: "~975\u00a0g" },
-          { k: "S", v: "~127\u00a0g" },
-          { k: "V", v: "~100\u00a0g" }
+          { k: "P", v: "~1008\u00a0g" },
+          { k: "T", v: "~970\u00a0g" },
+          { k: "S", v: "~120\u00a0g" },
+          { k: "V", v: "~95\u00a0g" }
         ],
-        note: "Po–Št plné dni (tréning ~2800–3050 kcal, P nad 200\u00a0g) · Pia len R+O · bez Pia večere, bez víkendu · len Kaufland Sekčov",
-        shake: "nesladené kokosové mlieko 200\u00a0ml + proteín + kakao + chia",
+        note: "v2: pizza preč, štvrtok air fryer deň (guľky v slanine + plnené placky), žiadna mletá paprika, pretlak sa nekupuje · Po–Št plné dni (P nad 200\u00a0g) · Pia len R+O · bez Pia večere, bez víkendu · len Kaufland Sekčov",
+        shake: "nesladené kokosové mlieko 200\u00a0ml + proteín + kakao + chia · vo štvrtok 2 odmerky proteínu",
         shakePill: "Shake Po–Št"
       },
       macroTable: {
         rows: [
           { d: "Po 26. 10.", kcal: "~3050", p: "~235", t: "~220", s: "~30", v: "~20" },
           { d: "Ut 27. 10.", kcal: "~2800", p: "~225", t: "~210", s: "~22", v: "~18" },
-          { d: "St 28. 10.", kcal: "~2950", p: "~225", t: "~210", s: "~35", v: "~22" },
-          { d: "Št 29. 10.", kcal: "~3050", p: "~245", t: "~225", s: "~28", v: "~27" },
-          { d: "Pia 30. 10. (R+O, bez shaku)", kcal: "~1500", p: "~115", t: "~110", s: "~12", v: "~13" }
+          { d: "St 28. 10.", kcal: "~2940", p: "~225", t: "~210", s: "~30", v: "~22" },
+          { d: "Št 29. 10. (2 odmerky proteínu)", kcal: "~3000", p: "~215", t: "~225", s: "~26", v: "~22" },
+          { d: "Pia 30. 10. (R+O, bez shaku)", kcal: "~1425", p: "~108", t: "~105", s: "~12", v: "~13" }
         ],
-        total: { d: "Týždeň", kcal: "~13\u00a0350", p: "~1045", t: "~975", s: "~127", v: "~100" },
+        total: { d: "Týždeň", kcal: "~13\u00a0215", p: "~1008", t: "~970", s: "~120", v: "~95" },
         notes: [
-          "Fallback (mleté 2×500\u00a0g + Št pizza zo steakov): Po ~3200 kcal / P~255 · St ~3200 / P~245 · Št ~2800 / P~255 · Ut a Pia bez zmeny → týždeň ~13\u00a0500 kcal, P~1100\u00a0g (T~990, S~127, V~100).",
-          "Bez pretlaku: S o ~5\u00a0g nižšie v St a Št, inak bez zmeny. Náhrada shaku (kokosový krém / smotana + maslo): makrá približne rovnaké.",
-          "Odhady bez váženia surovín. Všetky dni Po–Št nad 200\u00a0g bielkovín."
+          "Fallback (mleté 2×500\u00a0g + Št steaky z mrazničky): Po ~3200 kcal / P~255 · St ~3190 / P~245 · Št ~2850 / P~225 · Pia (2 vajcia) ~1500 / P~115 · Ut bez zmeny → týždeň ~13\u00a0540 kcal, P~1065\u00a0g (T~985, S~120, V~95).",
+          "Náhrada shaku (kokosový krém / smotana + maslo): makrá približne rovnaké.",
+          "Odhady bez váženia surovín. Všetky dni Po–Št nad 200\u00a0g bielkovín (Št vďaka 2. odmerke proteínu v shaku)."
         ]
       },
       shopTitle: "Nákup — Kaufland Sekčov",
       buyTitle: "Kúpiť (leták 22.–28. 10. ≠ polica, over etiketu)",
       haveTitle: "Doma — míňať NAJSKÔR (nekupuje sa)",
       buy: [
-        { key: "w1026-beef", text: "Mäso · Hovädzie mleté 100 %", em: "3×400\u00a0g z police (Po burger / St papriky / Št pizza) · NIE MIX bravč.+hov. 1\u00a0kg z letáku · fallback 2×500\u00a0g → Po 500 (bez majonézy), St 500, Št pizza zo 2 steakov z mrazničky" },
+        { key: "w1026-beef", text: "Mäso · Hovädzie mleté 100 %", em: "3×400\u00a0g z police (Po burger 400 / St papriky 400 / Št air fryer 200 guľky + 200 placky) · NIE MIX bravč.+hov. 1\u00a0kg z letáku · fallback 2×500\u00a0g → Po 500 (bez majonézy), St 500, Št zo 3 steakov z mrazničky (O steak, V kocky v slanine)" },
         { key: "w1026-salmon", text: "Mäso · Losos čerstvý filet", em: "~500\u00a0g vážený · akcia 1,39\u00a0€/100\u00a0g, do 28. 10. · Ut V 250 + St O 250" },
         { key: "w1026-chicken", text: "Mäso · Kuracie rezne stehenné / vykostené stehná", em: "~800\u00a0g · 4,69\u00a0€/kg · OVERIŤ, že NIE sú obaľované, inak stehná z police · Po O 400 + Ut O 400" },
-        { key: "w1026-bacon", text: "Mäso · Slanina (oravská)", em: "2×100\u00a0g · 0,79\u00a0€/100\u00a0g" },
+        { key: "w1026-bacon", text: "Mäso · Slanina (oravská)", em: "2×100\u00a0g · 0,79\u00a0€/100\u00a0g · 1 balenie nechať celé na Št guľky (8 plátkov)" },
         { key: "w1026-ham", text: "Mäso · Šunka (strojová)", em: "2×100\u00a0g · 0,75\u00a0€/100\u00a0g" },
         { key: "w1026-eggs", text: "Mliečne · Vajcia", em: "20 ks (2×10) · vychádza presne" },
         { key: "w1026-eidam", text: "Mliečne · Eidam", em: "2×100\u00a0g · 0,69\u00a0€/100\u00a0g" },
         { key: "w1026-butter", text: "Mliečne · Maslo", em: "1×200\u00a0g LEN ak doma dochádza (akcia 1,05\u00a0€)" },
         { key: "w1026-broc", text: "Zelenina · Brokolica", em: "1×500\u00a0g · 2. kus z akcie 2 za 1 NEbrať" },
-        { key: "w1026-pepper", text: "Zelenina · Paprika", em: "500\u00a0g balenie alebo 3 ks voľne · NIE 1\u00a0kg z akcie" },
+        { key: "w1026-pepper", text: "Zelenina · Paprika (čerstvá)", em: "500\u00a0g balenie alebo 3 ks voľne (St plnené papriky) · NIE 1\u00a0kg z akcie" },
         { key: "w1026-salad", text: "Zelenina · Ľadový šalát", em: "1 ks" },
-        { key: "w1026-garlic", text: "Zelenina · Cesnak, citrón, kyslé uhorky", em: "len ak doma nie sú" },
+        { key: "w1026-garlic", text: "Zelenina · Cesnak, citrón, kyslé uhorky", em: "len ak doma nie sú · cesnaku tento týždeň ide viac (air fryer)" },
         { key: "w1026-coco", text: "Špeciál · Kokosové mlieko NESLADENÉ", em: "2×400\u00a0ml · POVINNÉ · polica (ázijská/trvanlivá), etiketa len kokos + voda · „výrobok z kokosového mlieka“ nebrať · ak nie je → kokosový krém ~100\u00a0ml + voda, alebo bezlaktózová smotana ~50\u00a0ml + voda a v ten deň maslo +15\u00a0g k obedu" },
-        { key: "w1026-almond", text: "Špeciál · Mandľová múka / mleté mandle", em: "~250\u00a0g · fallback lúpané mandle 3×100\u00a0g zomlieť" },
-        { key: "w1026-paste", text: "Špeciál · Paradajkový pretlak", em: "1× 70\u00a0g plechovka/tuba · NIE 700\u00a0g · ak nie je → papriky aj pizza bez pretlaku (postup nižšie)" },
+        { key: "w1026-almond", text: "Špeciál · Mandľová múka / mleté mandle", em: "~200\u00a0g (1×200\u00a0g; ak nie je, 2×100\u00a0g) · len na žemle (150\u00a0g) · fallback lúpané mandle 2×100\u00a0g zomlieť" },
         { key: "w1026-bp", text: "Špeciál · Prášok do pečiva", em: "len ak dochádza" },
         { key: "w1026-coconut", text: "Voliteľne · Strúhaný kokos", em: "1 malé vrecko, ak chceš · do makier sa nepočíta" }
       ],
       have: [
         { key: "w1026-have-cabbage", text: "Kapusta (zvyšok veľkej hlávky) — Po O, Ut V šalát, Št O, Pia O" },
-        { key: "w1026-have-steaks", text: "Hovädzie steaky v mrazničke (~200\u00a0g/ks) — 1 ks Št obed; pri fallbacku +2 ks na Št pizzu" },
+        { key: "w1026-have-steaks", text: "Hovädzie steaky v mrazničke (~200\u00a0g/ks) — v hlavnom pláne sa nepoužijú; len pri fallbacku 3 ks na Št (St večer do chladničky)" },
         { key: "w1026-have-bryndza", text: "Bryndza ~130\u00a0g — Po R, Ut O, St R" },
         { key: "w1026-have-eidam", text: "Eidam ~90\u00a0g — Po V, Ut R (doraziť zvyšok)" },
-        { key: "w1026-have-philly", text: "Philadelphia + kyslá smotana — malé dávky (Ut R, Št R, Št O); ak sú po dátume, vyhodiť" },
+        { key: "w1026-have-philly", text: "Philadelphia + kyslá smotana — malé dávky (Ut R, Št R, Št O omáčka ku guľkám); ak sú po dátume, vyhodiť" },
         { key: "w1026-have-bacon", text: "Slanina ~100\u00a0g — Po R + Po O" },
         { key: "w1026-have-tuna", text: "Tuniak 2 konzervy — až Pia obed" },
         { key: "w1026-have-shrimp", text: "Krevety v mrazničke — záloha" },
-        { key: "w1026-have-pantry", text: "Kyslé uhorky, citróny, psyllium, proteín, kakao, chia, olivový olej, majonéza, jablčný ocot, korenie" }
+        { key: "w1026-have-pantry", text: "Kyslé uhorky, citróny, psyllium, proteín (vo Št 2 odmerky), kakao, chia, olivový olej, majonéza, jablčný ocot, cesnak, majoránka, rasca, oregano, sušené bylinky" }
       ],
       dont: [
         "kapusta",
@@ -1721,13 +1720,14 @@
         "krevety",
         "MIX bravčové+hovädzie 1\u00a0kg",
         "paprika 1\u00a0kg",
-        "pretlak 700\u00a0g",
+        "paradajkový pretlak (vyradený)",
+        "mletá paprika (nepoužíva sa)",
         "2. brokolica z akcie",
         "olivy",
         "huby",
         "cuketa"
       ],
-      dontNote: "Trvanlivosť: mleté na Št ZAMRAZIŤ hneď v pondelok (v stredu večer do chladničky). Mleté na St zamraziť, ak má spotrebu pred 28. 10. (v utorok večer do chladničky). Losos čo najčerstvejší, minúť do St obeda. Steak na Št obed (a pri fallbacku 2 steaky na pizzu) v stredu večer z mrazničky do chladničky.",
+      dontNote: "v2: pizza je preč, paradajkový pretlak sa nekupuje, mandľovej múky stačí ~200\u00a0g (len žemle). Trvanlivosť: mleté na Št (400\u00a0g) ZAMRAZIŤ hneď v pondelok, v stredu večer do chladničky. Mleté na St zamraziť, ak má spotrebu pred 28. 10. (v utorok večer do chladničky). Losos čo najčerstvejší, minúť do St obeda. Pri fallbacku 3 steaky v stredu večer do chladničky.",
       days: [
         {
           id: "po",
@@ -1764,8 +1764,10 @@
               items: [
                 { t: "hovädzie mleté (placky)", g: "400\u00a0g", hint: "fallback 500\u00a0g, potom bez majonézy" },
                 { t: "eidam", g: "30\u00a0g" },
-                { t: "ľadový šalát + 1 paprika + kyslé uhorky" },
-                { t: "majonéza", g: "15\u00a0g" }
+                { t: "korenie: soľ, čierne korenie, cesnak, majoránka (bez mletej papriky)" },
+                { t: "ľadový šalát + kyslé uhorky" },
+                { t: "majonéza", g: "15\u00a0g" },
+                { t: "+ 1 čerstvá paprika len ak je v balení 4. kus; inak viac šalátu" }
               ],
               tip: "Placky: 4 kusy, panvica stredne-vysoký ohrev, 4–5\u00a0min z každej strany, eidam navrch poslednú minútu pod pokrievkou."
             }
@@ -1820,7 +1822,7 @@
         {
           id: "st",
           name: "Streda",
-          totals: "~2950 kcal · P225 · T210 · S35 · V22",
+          totals: "~2940 kcal · P225 · T210 · S30 · V22",
           meals: [
             {
               tag: "r",
@@ -1847,15 +1849,15 @@
             {
               tag: "v",
               tagLabel: "Večera",
-              name: "Zapekané plnené papriky bez ryže",
+              name: "Zapekané plnené papriky bez ryže a bez pretlaku",
               items: [
                 { t: "hovädzie mleté", g: "400\u00a0g", hint: "fallback 500\u00a0g" },
                 { t: "3 papriky" },
                 { t: "1 vajce + 2 strúčiky cesnaku" },
-                { t: "paradajkový pretlak", g: "~35\u00a0g", hint: "½ konzervy; voliteľný" },
+                { t: "majoránka, rasca, oregano/bylinky (bez pretlaku, bez mletej papriky)" },
                 { t: "eidam", g: "60\u00a0g" }
               ],
-              tip: "Postup krok za krokom: 200\u00a0°C, 25\u00a0min prikryté + 10\u00a0min so syrom — recept nižšie. Dnes večer prelož z mrazničky do chladničky: mleté na Št pizzu + 1 steak na Št obed (pri fallbacku 3 steaky).",
+              tip: "Postup krok za krokom: 200\u00a0°C, 25\u00a0min prikryté + 10\u00a0min so syrom — recept nižšie. Dnes večer prelož z mrazničky do chladničky mleté na Št (400\u00a0g); pri fallbacku 3 steaky.",
               tipWarn: true
             }
           ],
@@ -1864,7 +1866,8 @@
         {
           id: "stv",
           name: "Štvrtok",
-          totals: "~3050 kcal · P245 · T225 · S28 · V27",
+          totals: "~3000 kcal · P215 · T225 · S26 · V22 · air fryer deň",
+          dayNote: "Air fryer deň: 2×200\u00a0g mletého (guľky na obed, placky na večeru). Shake dnes s 2 odmerkami proteínu.",
           meals: [
             {
               tag: "r",
@@ -1881,28 +1884,43 @@
             {
               tag: "o",
               tagLabel: "Obed",
-              name: "Hovädzí steak + kapusta + cesnakový dip",
+              name: "Air fryer: mäsové guľky v slanine + kapusta",
               items: [
-                { t: "hovädzí steak (z mrazničky) na masle 10\u00a0g", g: "~200\u00a0g" },
-                { t: "kapusta restovaná", g: "250\u00a0g" },
-                { t: "kyslá smotana s cesnakom (dip)", g: "30\u00a0g" }
+                { t: "hovädzie mleté", g: "200\u00a0g" },
+                { t: "slanina (celé balenie, 8 plátkov)", g: "100\u00a0g" },
+                { t: "1 vajce, 1 strúčik cesnaku, psyllium ~3\u00a0g, majoránka" },
+                { t: "kapusta restovaná na 5\u00a0g masla", g: "150\u00a0g" },
+                { t: "omáčka: kyslá smotana + ½ strúčika cesnaku", g: "30\u00a0g", hint: "namiesto majonézy" }
               ],
-              tip: "Ak sú v mrazničke len 2 steaky a ideš cez fallback: namiesto steaku krevety z mrazničky ~220\u00a0g + maslo 20\u00a0g."
+              tip: "190\u00a0°C, 7\u00a0min + otočiť + 7\u00a0min (spolu 14\u00a0min), vnútri 71\u00a0°C — postup krok za krokom nižšie.",
+              tipWarn: true
             },
             {
               tag: "v",
               tagLabel: "Večera",
-              name: "Mini keto pizza s hovädzím",
+              name: "Air fryer: plnené hovädzie placky so syrom",
               items: [
-                { t: "cesto: mandľová múka 70\u00a0g + psyllium 10\u00a0g + 1 vajce" },
-                { t: "hovädzie mleté", g: "400\u00a0g", hint: "fallback 2 steaky ~400\u00a0g na kocky" },
-                { t: "paradajkový pretlak", g: "~35\u00a0g", hint: "druhá polovica; voliteľný" },
-                { t: "eidam", g: "60\u00a0g" },
-                { t: "cesnak, oregano" },
-                { t: "k tomu ľadový šalát + kyslé uhorky" }
+                { t: "hovädzie mleté", g: "200\u00a0g" },
+                { t: "1 vajce, 1 strúčik cesnaku, majoránka" },
+                { t: "eidam na kocky (do stredu)", g: "50\u00a0g" },
+                { t: "ľadový šalát + kyslé uhorky" },
+                { t: "bez majonézy (kalórií je dosť)" }
               ],
-              tip: "Postup krok za krokom: 200\u00a0°C, korpus 10–12\u00a0min + s plnkou 8–10\u00a0min — recept nižšie.",
+              tip: "190\u00a0°C, 6\u00a0min + otočiť + 6\u00a0min (spolu 12\u00a0min), vnútri 71\u00a0°C — postup krok za krokom nižšie.",
               tipWarn: true
+            },
+            {
+              tag: "v",
+              tagLabel: "Fallback",
+              name: "Len ak bolo mleté 2×500\u00a0g: steak na obed + kocky v slanine na večeru",
+              items: [
+                { t: "O: hovädzí steak z mrazničky na masle 10\u00a0g", g: "~200\u00a0g" },
+                { t: "O: kapusta restovaná 250\u00a0g + kyslá smotana 30\u00a0g s cesnakom" },
+                { t: "V: hovädzie kocky v slanine (2 steaky)", g: "~400\u00a0g" },
+                { t: "V: slanina 100\u00a0g + ľadový šalát + kyslé uhorky + majonéza 20\u00a0g s cesnakom" },
+                { t: "shake len s 1 odmerkou" }
+              ],
+              tip: "Ak sú v mrazničke len 2 steaky: na obed namiesto steaku krevety z mrazničky ~220\u00a0g + maslo 20\u00a0g. Postup kociek v slanine nižšie."
             }
           ],
           shake: true
@@ -1910,7 +1928,7 @@
         {
           id: "pia",
           name: "Piatok",
-          totals: "~1500 kcal · P115 · T110 · S12 · V13 · len R+O",
+          totals: "~1425 kcal · P108 · T105 · S12 · V13 · len R+O",
           light: true,
           meals: [
             {
@@ -1931,7 +1949,7 @@
               name: "Tuniakový šalát s vajcom a kapustou",
               items: [
                 { t: "tuniak 2 konzervy (doma, scedené)" },
-                { t: "2 vajcia natvrdo" },
+                { t: "1 vajce natvrdo", hint: "pri fallbacku 2" },
                 { t: "kapusta nadrobno", g: "150\u00a0g" },
                 { t: "zvyšok ľadového šalátu" },
                 { t: "majonéza", g: "30\u00a0g" },
@@ -1968,83 +1986,131 @@
         {
           id: "papriky",
           title: "Zapekané plnené papriky bez ryže (St večera)",
-          yield: "1 porcia · 200\u00a0°C · 25\u00a0min prikryté (pri 500\u00a0g mäsa 30\u00a0min) + 10\u00a0min so syrom",
+          yield: "1 porcia · bez pretlaku, bez mletej papriky · 200\u00a0°C · 25\u00a0min prikryté (pri 500\u00a0g mäsa 30\u00a0min) + 10\u00a0min so syrom",
           ingredients: [
             { g: "400\u00a0g", t: "hovädzie mleté (fallback 500\u00a0g)" },
             { g: "3", t: "papriky" },
             { g: "1", t: "vajce" },
             { g: "2", t: "strúčiky cesnaku" },
-            { g: "~35\u00a0g", t: "paradajkový pretlak (½ konzervy 70\u00a0g)" },
+            { t: "soľ, čierne korenie" },
+            { g: "1 ČL", t: "majoránky" },
+            { g: "½ ČL", t: "rasce" },
+            { t: "oregano alebo sušené bylinky z domu" },
             { g: "60\u00a0g", t: "eidam" },
-            { t: "soľ, korenie, sladká paprika, oregano" },
             { g: "5\u00a0g", t: "maslo na misu" }
           ],
           steps: [
             "Rúru predhriať na 200\u00a0°C.",
             "Papriky prekrojiť pozdĺžne na polovice, vybrať jadrovník a semienka.",
-            "V mise zmiešať mleté mäso, vajce, pretlačený cesnak, ~15\u00a0g pretlaku, soľ, korenie a sladkú papriku.",
+            "V mise zmiešať mleté mäso, vajce, pretlačený cesnak, soľ, korenie, majoránku, rascu a oregano/bylinky.",
             "Polovice paprík naplniť mäsom, uložiť do vymastenej zapekacej misy plnkou hore.",
-            "Navrch rozotrieť zvyšok pretlaku (~20\u00a0g) zriedený 2 lyžicami vody; do misy podliať ~50\u00a0ml vody.",
+            "Do misy podliať ~70\u00a0ml vody (na papriky nič nerozotierať).",
             "Piecť 25\u00a0min pri 200\u00a0°C prikryté alobalom (pri 500\u00a0g mäsa 30\u00a0min), potom alobal dať dole.",
             "Posypať strúhaným eidamom 60\u00a0g a zapiecť ešte 10\u00a0min bez alobalu, kým syr nie je zlatý a šťava z mäsa číra.",
             "Nechať 5\u00a0min postáť, podávať s kyslými uhorkami."
-          ],
-          fallbacks: [
-            "Bez pretlaku: v kroku 3 pridať navyše 1 ČL sladkej papriky + oregano, v kroku 5 len podliať ~70\u00a0ml vody (nič nerozotierať). Čas a teplota rovnaké."
           ]
         },
         {
-          id: "pizza",
-          title: "Mini keto pizza (Št večera)",
-          yield: "1 veľká alebo 2 menšie · 200\u00a0°C · korpus 10–12\u00a0min + s plnkou 8–10\u00a0min",
+          id: "gulky",
+          title: "Air fryer: mäsové guľky v slanine (Št obed)",
+          yield: "1 porcia · 190\u00a0°C · 7 + 7\u00a0min (spolu 14\u00a0min) · vnútri 71\u00a0°C",
           ingredients: [
-            { g: "70\u00a0g", t: "mandľová múka" },
-            { g: "10\u00a0g", t: "psyllium" },
+            { g: "200\u00a0g", t: "mletého hovädzieho" },
             { g: "1", t: "vajce" },
-            { t: "½ ČL prášku do pečiva + štipka soli" },
-            { g: "~60\u00a0ml", t: "horúca voda" },
-            { g: "400\u00a0g", t: "hovädzie mleté (fallback: 2 steaky ~400\u00a0g, rozmrazené, na malé kocky/prúžky)" },
-            { g: "~35\u00a0g", t: "paradajkový pretlak (druhá polovica konzervy)" },
-            { g: "1", t: "strúčik cesnaku" },
-            { g: "60\u00a0g", t: "eidam" },
-            { t: "oregano" }
+            { g: "1", t: "strúčik cesnaku (prelisovaný)" },
+            { g: "~3\u00a0g", t: "psyllium (½ lyžičky)" },
+            { t: "soľ (málo), čierne korenie, štipka majoránky" },
+            { g: "8", t: "plátkov slaniny (1 balenie ~100\u00a0g)" },
+            { g: "30\u00a0g", t: "kyslá smotana + ½ strúčika cesnaku (omáčka; v recepte inak majonéza 20\u00a0g)" },
+            { g: "150\u00a0g", t: "kapusta restovaná na 5\u00a0g masla" }
           ],
           steps: [
-            "Rúru predhriať na 200\u00a0°C, plech vyložiť papierom.",
-            "Mäso pripraviť: mleté opiecť na suchej panvici ~8\u00a0min do rozsypania a zhnednutia, osoliť, okoreniť, pridať cesnak; odstaviť. (Fallback steaky: kocky opiecť na rozpálenej panvici s 5\u00a0g masla 3–4\u00a0min — len zatiahnuť, dopečú sa v rúre; osoliť, okoreniť, pridať cesnak.)",
-            "Zmiešať mandľovú múku, psyllium, prášok do pečiva a soľ; pridať vajce a horúcu vodu, vymiesiť hladké cesto, 2\u00a0min nechať stáť.",
-            "Cesto rozvaľkať medzi dvoma papiermi na pečenie na tenký plát (~3–4\u00a0mm) alebo na 2 menšie kruhy.",
-            "Korpus predpiecť 10–12\u00a0min pri 200\u00a0°C, kým nie je na povrchu suchý.",
-            "Korpus potrieť pretlakom, rozložiť mäso, posypať eidamom a oreganom.",
-            "Dopiecť 8–10\u00a0min pri 200\u00a0°C, kým sa syr neroztopí a okraje nie sú zlaté (voliteľne 1–2\u00a0min gril).",
-            "Nechať 3\u00a0min postáť, nakrájať. K tomu ľadový šalát + kyslé uhorky."
+            "Air fryer predhrej na 190\u00a0°C asi 3\u00a0min. Na dno koša daj papier na pečenie.",
+            "Mleté premiešaj s vajcom, cesnakom, psylliom, korením a majoránkou. Soli daj málo, slanina je slaná. Nechaj 5\u00a0min postáť, psyllium zmes spevní.",
+            "Vytvaruj 8 guliek (každá asi ako orech).",
+            "Každú guľku obaľ plátkom slaniny, koniec daj dole.",
+            "Ulož do koša koncom slaniny dole, s medzerami.",
+            "Peč na 190\u00a0°C 7\u00a0min.",
+            "Kôš pretras alebo guľky otoč a peč ďalších 7\u00a0min (spolu 14\u00a0min), kým slanina nie je chrumkavá.",
+            "Skontroluj jednu guľku: vnútri 71\u00a0°C.",
+            "Kým sa pečú, zmiešaj kyslú smotanu s prelisovaným cesnakom a orestuj kapustu. Podávaj guľky s omáčkou a kapustou."
           ],
-          fallbacks: [
-            "Bez pretlaku (krok 6): korpus len potrieť 1 lyžicou olivového oleja s pretlačeným cesnakom a oreganom (biela pizza), potom mäso a eidam.",
-            "Fallback steaky (ak si kúpil 2×500\u00a0g mletého): 2 steaky v stredu večer do chladničky, v kroku 2 len zatiahnuť 3–4\u00a0min, ostatné rovnaké."
+          tips: [
+            "Kôš neprepĺňaj, nech okolo mäsa ide vzduch. Pri slanine daj na dno papier na pečenie, zachytí tuk a nebude sa dymiť. Ďalšie air fryer recepty sú v sekcii Air fryer recepty dole na stránke."
+          ]
+        },
+        {
+          id: "placky",
+          title: "Air fryer: plnené hovädzie placky so syrom (Št večera)",
+          yield: "1 porcia · 190\u00a0°C · 6 + 6\u00a0min (spolu 12\u00a0min) · vnútri 71\u00a0°C",
+          ingredients: [
+            { g: "200\u00a0g", t: "mletého hovädzieho" },
+            { g: "1", t: "vajce" },
+            { g: "1", t: "strúčik cesnaku (prelisovaný)" },
+            { t: "soľ, čierne korenie, štipka majoránky" },
+            { g: "50\u00a0g", t: "eidam (ak sa dá bezlaktózový), na kocky" },
+            { t: "k tomu ľadový šalát a kyslé uhorky (tento týždeň bez majonézy)" }
+          ],
+          steps: [
+            "Air fryer predhrej na 190\u00a0°C asi 3\u00a0min.",
+            "Mleté hovädzie premiešaj s vajcom, cesnakom, soľou, korením a majoránkou.",
+            "Rozdeľ na 2–3 kusy. Každý rozplácni na dlani, do stredu daj syr.",
+            "Okraje zatiahni cez syr a placku dobre uzavri, aby syr nevytiekol. Jemne ju sploštíš na hrúbku asi 2\u00a0cm.",
+            "Daj placky do koša vedľa seba, nie na seba.",
+            "Peč na 190\u00a0°C 6\u00a0min.",
+            "Placky otoč a peč ďalších 6\u00a0min (spolu 12\u00a0min).",
+            "Skontroluj, či je mäso hotové: vnútri 71\u00a0°C (teplomer daj do mäsa, nie do syra). Bez teplomera: šťava je číra, vnútri nie je ružové.",
+            "Nechaj 2\u00a0min odpočinúť a podávaj so šalátom a uhorkami."
+          ]
+        },
+        {
+          id: "kocky-fallback",
+          title: "Air fryer FALLBACK: hovädzie kocky v slanine (Št večera, len ak mleté bolo 2×500\u00a0g)",
+          yield: "1 porcia · 190\u00a0°C · 5–6 + 5–6\u00a0min (spolu 10–12\u00a0min) · vnútri aspoň 63\u00a0°C",
+          ingredients: [
+            { g: "~400\u00a0g", t: "2 steaky z mrazničky (rozmrazené v chladničke od St večera)" },
+            { g: "8", t: "plátkov slaniny (1 balenie ~100\u00a0g)" },
+            { g: "1", t: "strúčik cesnaku" },
+            { t: "soľ (málo), čierne korenie, majoránka alebo bylinky z domu" },
+            { t: "špáradlá" },
+            { g: "20\u00a0g", t: "majonéza + ½ strúčika cesnaku (omáčka)" },
+            { t: "k tomu ľadový šalát a kyslé uhorky" }
+          ],
+          steps: [
+            "Air fryer predhrej na 190\u00a0°C asi 3\u00a0min. Na dno koša daj papier na pečenie.",
+            "Steaky osuš papierovou utierkou a nakrájaj na kocky asi 3\u00a0cm (vyjde ~16 ks).",
+            "Kocky premiešaj s prelisovaným cesnakom, korením, majoránkou a štipkou soli.",
+            "Plátky slaniny prekroj na polovice, každou polovicou obaľ jednu kocku a zopni špáradlom.",
+            "Ulož do koša v jednej vrstve, s medzerami.",
+            "Peč na 190\u00a0°C 5–6\u00a0min.",
+            "Kôš pretras alebo kocky otoč a peč ďalších 5–6\u00a0min (spolu 10–12\u00a0min), kým slanina nie je chrumkavá.",
+            "Skontroluj jednu kocku: vnútri aspoň 63\u00a0°C (hovädzie môže byť stredne prepečené; ak chceš úplne prepečené, 71\u00a0°C, +1–2\u00a0min).",
+            "Nechaj 2\u00a0min odpočinúť, vyber špáradlá. Podávaj s majonézou s cesnakom, šalátom a uhorkami."
           ]
         }
       ],
       tips: [
-        "Pondelok: mleté na štvrtok hneď zamraziť. Mleté na stredu zamraziť, ak má spotrebu pred 28. 10.",
+        "Pondelok: mleté na štvrtok (400\u00a0g) hneď zamraziť. Mleté na stredu zamraziť, ak má spotrebu pred 28. 10.",
         "Utorok večer: (ak je zamrazené) mleté na stredu do chladničky.",
-        "Streda večer: mleté na Št pizzu + 1 steak na Št obed z mrazničky do chladničky (pri fallbacku 3 steaky).",
+        "Streda večer: mleté na Št (400\u00a0g) z mrazničky do chladničky; pri fallbacku 3 steaky.",
+        "Jedno balenie slaniny (100\u00a0g) nechaj neotvorené na Št guľky.",
         "Losos kúpiť čo najčerstvejší a minúť do stredy obeda.",
         "Philadelphia / kyslá smotana: ak sú po dátume, vyhodiť (v pláne len po 25–30\u00a0g).",
-        "Vajcia presne 20 ks: žemle 3 bielka · Po 2 · Ut 3 · St 3 · Št 3 · Pia R 2 · Pia O 2 · papriky 1 · pizza 1."
+        "Vajcia presne 20 ks: žemle 3 bielka · Po 2 · Ut 3 · St 3 · Št 3 · Pia R 2 · Pia O 1 · papriky 1 · Št guľky 1 · Št placky 1. Fallback: spotreba 19 z 20.",
+        "Žiadna mletá paprika (korenie) — namiesto nej cesnak, majoránka, rasca, oregano alebo bylinky z domu."
       ],
       leftovers: [
-        { t: "kapusta — zvyšok hlávky", g: "~0–300\u00a0g" },
-        { t: "hovädzie steaky v mrazničke (všetky okrem 1; pri fallbacku okrem 3)" },
+        { t: "kapusta — zvyšok hlávky", g: "~100–400\u00a0g" },
+        { t: "hovädzie steaky v mrazničke — všetky (pri fallbacku všetky okrem 3)" },
         { t: "krevety v mrazničke (ak sa nepoužili ako záloha)" },
         { t: "Philadelphia", g: "~50\u00a0g" },
         { t: "kyslá smotana (ak ešte dobrá)", g: "~50\u00a0g" },
         { t: "bryndza", g: "~20\u00a0g" },
-        { t: "eidam", g: "~20\u00a0g" },
+        { t: "eidam", g: "~90\u00a0g" },
         { t: "slanina", g: "~30\u00a0g" },
-        { t: "mandľová múka", g: "~30\u00a0g" },
+        { t: "mandľová múka", g: "~50\u00a0g" },
         { t: "maslo (ak sa kupovalo), kyslé uhorky, citróny" },
-        { t: "1 paprika len ak bolo v balení 4+ ks; pretlak a kokosové mlieko sa minú celé" }
+        { t: "paprika: nič (1 ks len ak bol v balení 4. kus a nezjedol sa v Po); kokosové mlieko a vajcia sa minú (pri fallbacku 1 vajce)" }
       ]
     }
 
@@ -2266,6 +2332,9 @@
         return "<li>" + esc(i.t) + "</li>";
       }).join("");
       var steps = (r.steps || []).map(function (st) { return "<li>" + esc(st) + "</li>"; }).join("");
+      var rt = (r.tips || []).map(function (t) {
+        return '<p class="tip" role="note"><span class="tip__label">Tip</span> ' + esc(t) + "</p>";
+      }).join("");
       var fb = (r.fallbacks || []).map(function (f) {
         return '<p class="tip tip--warn" role="note"><span class="tip__label">Fallback</span> ' + esc(f) + "</p>";
       }).join("");
@@ -2275,7 +2344,7 @@
         (r.yield ? '<p class="recipe__yield">' + esc(r.yield) + "</p>" : "") +
         '<ul class="recipe__ing">' + ing + "</ul>" +
         '<ol class="recipe__steps">' + steps + "</ol>" +
-        fb +
+        rt + fb +
         "</section>"
       );
     }
