@@ -2431,6 +2431,7 @@
       var short = JUMP_SHORT[d.id] || (d.name ? d.name.slice(0, 2) : d.id);
       parts.push('<a href="#' + esc(d.id) + '">' + esc(short) + "</a>");
     });
+    parts.push('<a href="#air-fryer-recepty">Air fryer</a>');
     jumpNav.innerHTML = parts.join("\n        ");
   }
 
@@ -2570,5 +2571,13 @@
     showShoppingListView();
   } else {
     showWeek(getSelectedWeekId());
+  }
+
+  /* Re-apply #anchor after dynamic render (e.g. #air-fryer-recepty below the week) */
+  if (location.hash && location.hash.length > 1) {
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) {
+      setTimeout(function () { target.scrollIntoView(); }, 0);
+    }
   }
 })();
