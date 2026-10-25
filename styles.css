@@ -939,3 +939,11 @@ img { max-width: 100%; }
   background: var(--bg-card);
   color: var(--text);
 }
+
+/* Macro table (week 2026-10-26+) */
+.macro-table__wrap { overflow-x: auto; }
+.macro-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.macro-table th, .macro-table td { padding: 0.4rem 0.5rem; text-align: right; border-bottom: 1px solid rgba(127,127,127,0.25); white-space: nowrap; }
+.macro-table th:first-child, .macro-table td:first-child { text-align: left; white-space: normal; }
+.macro-table__total th, .macro-table__total td { font-weight: 700; border-bottom: none; }
+.shop-note a { color: inherit; text-decoration: underline; font-weight: 600; }
